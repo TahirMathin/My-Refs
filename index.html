@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="Final Project.js"></script>
+	<link rel="stylesheet" type="text/css" href="Final Project.css">
+	<title>Simple Intrest calculator</title>
+</head>
+<body>
+
+
+	<div class="Div1">
+		<h1>Simple interest calculator</h1>
+		<p>Principle amount</p><input type="number" min="0" id="Principle" class="prin"><br>
+    <p>Rate</p><input type="range" id="Rate" min="1" max="20" step="0.25" value="10.25" onchange="ratechange()"><span id="rate-displayer">10.25</span><br>
+    <p>Years</p>
+
+    <select id="Years">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>     
+        </select><br>
+        
+
+
+
+               
+       	<button class="button" onclick="compute()">calculate interest</button>
+
+       	<br>
+
+       	<span id="result"></span>
+
+       	<footer> &copy Everyone can get rich </footer>
+
+       	
+
+       
+
+
+       
+   </div>
+
+	
+
+
+</body>
+</html>
