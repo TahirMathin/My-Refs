@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="Final Project.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="Final Project.css">
 	<title>Simple Intrest calculator</title>
 </head>
@@ -10,7 +10,7 @@
 
 	<div class="Div1">
 		<h1>Simple interest calculator</h1>
-		<p>Principle amount</p><input type="number" min="0" id="Principle" class="prin"><br>
+		<p>Principle amount</p><input type="number" placeholder="positive number" id="Principle" class="prin"><br>
     <p>Rate</p><input type="range" id="Rate" min="1" max="20" step="0.25" value="10.25" onchange="ratechange()"><span id="rate-displayer">10.25</span><br>
     <p>Years</p>
 
@@ -26,12 +26,14 @@
       <option value="9">9</option>
       <option value="10">10</option>     
         </select><br>
-        
+        <span id="result"></sapn>
 
 
 
                
        	<button class="button" onclick="compute()">calculate interest</button>
+		
+		
 
        	<br>
 
